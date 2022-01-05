@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.0;
 
-contract CrowdFounding {
+contract CrowdFunding {
     enum FoundraisingState { Opened, Closed }
 
     struct Contribution {
@@ -21,6 +21,7 @@ contract CrowdFounding {
     }
 
     Project[] public projects;
+
     mapping(string => Contribution[]) public contributions;
 
     //string public id;
